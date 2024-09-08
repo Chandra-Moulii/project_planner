@@ -56,10 +56,7 @@ export default function ListView({ cols }: kanBanProps) {
           Add Task
         </button>
       </div>
-      <div
-        data-info="No tasks here create some"
-        className="relative after:absolute after:z-10 after:h-full after:w-full after:text-foreground after:content-[attr(data-info)] after:text-sm after:text-center after:font-medium"
-      >
+      <div className="relative after:z-10 after:h-full after:w-full after:text-center after:text-sm after:font-medium after:text-foreground after:content-[attr(data-info)]">
         {Object.entries(cols).map(([, value]) => {
           return (
             <div>

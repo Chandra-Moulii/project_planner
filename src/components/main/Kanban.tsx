@@ -174,7 +174,7 @@ export default function Kanban({ cols }: kanBanProps) {
                 {(provided, snapshot) => {
                   return (
                     <div
-                      className={`relative grid max-h-[450px] min-h-[10px] ${snapshot.isDraggingOver ? "rounded outline-dashed outline-2 outline-foreground/50" : ""}`}
+                      className={`relative grid max-h-[450px] min-h-[10px] overflow-y-auto ${snapshot.isDraggingOver ? "rounded outline-dashed outline-2 outline-foreground/50" : ""}`}
                       {...provided.droppableProps}
                       ref={provided.innerRef}
                     >
